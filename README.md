@@ -64,11 +64,10 @@ volumes:
 
 #### 호스팅 중인 URI 이용
 
-`접속 URI` : [https://hanrabong.asuscomm.com/econrich](https://hanrabong.asuscomm.com/econrich)
+`접속 URI` : [https://hanrabong.asuscomm.com/econrich](https://hanrabong.asuscomm.com/econrich){:target="_blank"}
 
 ##### API 명세서 확인
-
-[https://hanrabong.asuscomm.com/econrich/swagger-ui/index.html#](https://hanrabong.asuscomm.com/econrich/swagger-ui/index.html#)
+<a href="https://hanrabong.asuscomm.com/econrich/swagger-ui/index.html#" target="_blank">https://hanrabong.asuscomm.com/econrich/swagger-ui/index.html#</a>
 
 ### 구현 기능 요구 사항
 
