@@ -24,6 +24,7 @@ version: "3.7"
 
 services:
   api:
+    # 해당 이미지는 본인의 배포 환경에 맞게 arm64 아키텍처로 빌드하였으므로 다른 환경에서의 실행에 제약이 있을 수 있습니다.
     image: choikj33/econrich:1.2
     container_name: task_api
     restart: always
@@ -40,6 +41,8 @@ services:
       - DB_DATABASE=hr
       - DB_OPTION=useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&serverTimezone=Asia/Seoul
       - PRIVATE_KEY="${메일을 통해 전달}"
+      - server.servlet.contextPath=/econrich/
+      - server.forward-headers-strategy=framework
 
   db:
     container_name: task_db
@@ -65,9 +68,7 @@ volumes:
 
 ##### API 명세서 확인
 
-```
-https://hanrabong.asuscomm.com/econrich/swagger-ui/index.html#
-```
+[https://hanrabong.asuscomm.com/econrich/swagger-ui/index.html#](https://hanrabong.asuscomm.com/econrich/swagger-ui/index.html#)
 
 ### 구현 기능 요구 사항
 
